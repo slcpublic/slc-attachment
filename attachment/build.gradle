@@ -28,5 +28,4 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "androidx.appcompat:appcompat:$androidXAppcompat"
-    compileOnly "android.slc:mediapicker:$mpVersion"
 }
