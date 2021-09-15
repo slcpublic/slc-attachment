@@ -43,7 +43,7 @@ public interface NetBody<T> {
     /**
      * 设置网络文件路径
      *
-     * @param netBodyNamePath
+     * @param netBodyPath
      */
-    void setNetBodyNamePath(String netBodyNamePath);
+    void setNetBodyPath(String netBodyPath);
 }
