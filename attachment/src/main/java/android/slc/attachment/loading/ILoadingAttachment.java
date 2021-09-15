@@ -15,7 +15,7 @@ import android.slc.attachment.bean.Progress;
  * @param <P> 进度回调
  * @param <P>
  */
-public interface ILoadingAttachment<L, N extends NetBody, F extends FileInfo, P extends Progress> extends IBaseAttachment<L, N> {
+public interface ILoadingAttachment<L, N extends NetBody<?>, F extends FileInfo, P extends Progress> extends IBaseAttachment<L, N> {
 
     /**
      * 附件操作监听
@@ -23,6 +23,7 @@ public interface ILoadingAttachment<L, N extends NetBody, F extends FileInfo, P 
      *
      * @return
      */
+    @Deprecated
     OnAttachmentOperatingListener<F, P> getOnAttachmentOperatingListener();
 
     /**
@@ -30,6 +31,10 @@ public interface ILoadingAttachment<L, N extends NetBody, F extends FileInfo, P 
      *
      * @param operatingListener
      */
+    @Deprecated
     void setOnAttachmentOperatingListener(OnAttachmentOperatingListener<F, P> operatingListener);
 
+    P getProgress();
+
+    void setProgress(P progress);
 }

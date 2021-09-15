@@ -4,6 +4,7 @@ import android.slc.attachment.BaseAttachmentItem;
 import android.slc.attachment.bean.FileInfo;
 import android.slc.attachment.bean.Progress;
 
+@Deprecated
 public abstract class LoadingAttachmentItem<T extends ILoadingAttachment, F extends FileInfo, P extends Progress> extends
         BaseAttachmentItem<T> implements ILoadingAttachmentItem<T, F, P> {
     /*@Override

@@ -7,6 +7,7 @@ import android.view.View;
  *
  * @param <T> 附件
  */
+@Deprecated
 public class BaseAttachmentItem<T extends IBaseAttachment> implements IBaseAttachmentItem<T> {
     protected T mAttachment;
     protected View mItemView;

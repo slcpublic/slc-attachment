@@ -2,7 +2,7 @@ package android.slc.attachment.loading;
 
 import android.slc.attachment.bean.FileInfo;
 import android.slc.attachment.bean.Progress;
-
+@Deprecated
 public interface OnAttachmentOperatingListener<F extends FileInfo, P extends Progress> {
     void onStart(P progress);
 

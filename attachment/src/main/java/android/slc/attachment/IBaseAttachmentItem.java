@@ -7,6 +7,7 @@ import java.util.Map;
 /**
  * 附件的item接口
  */
+@Deprecated
 public interface IBaseAttachmentItem<T extends IBaseAttachment> {
     /**
      * 设置附件
@@ -40,7 +41,7 @@ public interface IBaseAttachmentItem<T extends IBaseAttachment> {
         /**
          * 对附件的操作事件
          *
-         * @param eventCode  事件代码 参考{@link com.slc.commonlist.utils.attachment.AttachmentOperatingEvent}
+         * @param eventCode  事件代码 参考{@link android.slc.attachment.AttachmentOperatingEvent}
          * @param attachment 附件
          */
         void onOperating(int eventCode, T attachment, Map<String, Object> extra);

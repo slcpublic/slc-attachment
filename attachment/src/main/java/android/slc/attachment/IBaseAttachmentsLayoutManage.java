@@ -10,6 +10,7 @@ import java.util.List;
  *
  * @param <T>
  */
+@Deprecated
 public interface IBaseAttachmentsLayoutManage<T extends IBaseAttachment, V extends ViewGroup> {
     void addAttachmentItem(T attachment);
 

@@ -9,8 +9,9 @@ import android.slc.attachment.bean.Progress;
  * 加载进度item
  *
  * @param <T>
- * @param <L>
+ * @param <F>
  * @param <P>
  */
+@Deprecated
 public interface ILoadingAttachmentItem<T extends IBaseAttachment, F extends FileInfo, P extends Progress> extends IBaseAttachmentItem<T>, OnAttachmentOperatingListener<F, P> {
 }

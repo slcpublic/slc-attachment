@@ -16,13 +16,12 @@ public class Progress {
     public String filePath;                         //保存文件地址
     public String fileName;                         //保存的文件名
     public int fraction;                          //下载的进度，0-100
-    public long totalSize;                          //总字节长度, byte
+    public long totalSize=0;                          //总字节长度, byte
     public long currentSize;                        //本次下载的大小, byte
     public transient long speed;                    //网速，byte/s
     public int status;                              //当前状态
+    public Serializable extra1;                     //额外的数据
+    public Serializable extra2;                     //额外的数据
     public Serializable extra3;                     //额外的数据
 
-    public Progress() {
-        totalSize = 0;
-    }
 }

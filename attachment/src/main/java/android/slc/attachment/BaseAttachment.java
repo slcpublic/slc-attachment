@@ -3,7 +3,7 @@ package android.slc.attachment;
 
 import android.slc.attachment.bean.NetBody;
 
-public abstract class BaseAttachment<L, N extends NetBody> implements IBaseAttachment<L, N> {
+public abstract class BaseAttachment<L, N extends NetBody<?>> implements IBaseAttachment<L, N> {
     protected L mLocalBody;
     protected N mNetBody;
 

@@ -4,13 +4,46 @@ package android.slc.attachment.bean;
  * @author slc
  * @date 2020-09-03 13:47
  */
-public interface NetBody {
+public interface NetBody<T> {
+    /**
+     * 获取网络主体id
+     *
+     * @return
+     */
+    T getNetBodyId();
 
-    String getName();
+    /**
+     * 设置网络主体id
+     *
+     * @param netBodyId
+     */
+    void setNetBodyId(T netBodyId);
 
-    void setName(String name);
+    /**
+     * 获取网路主体名称
+     *
+     * @return
+     */
+    String getNetBodyName();
 
-    String getPath();
+    /**
+     * 设置网络主体名称
+     *
+     * @param netBodyName
+     */
+    void setNetBodyName(String netBodyName);
 
-    void setPath(String path);
+    /**
+     * 获取网络文件路径
+     *
+     * @return
+     */
+    String getNetBodyPath();
+
+    /**
+     * 设置网络文件路径
+     *
+     * @param netBodyNamePath
+     */
+    void setNetBodyNamePath(String netBodyNamePath);
 }

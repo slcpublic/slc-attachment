@@ -36,7 +36,7 @@ dependencies {
     implementation "androidx.fragment:fragment:$androidXFragment"
     implementation "androidx.annotation:annotation:1.2.0-rc01"
 
-    implementation ("com.google.android.material:material:$googleAndroidMaterial") {
+    implementation("com.google.android.material:material:$googleAndroidMaterial") {
         exclude(group: 'appcompat:appcompat, constraintlayout:constraintlayout')
     }
     implementation "androidx.constraintlayout:constraintlayout:$androidXConstraintlayout"

@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 
 import androidx.collection.SimpleArrayMap;
 
+@Deprecated
 public abstract class BaseAttachmentsLayoutManage<T extends IBaseAttachment, V extends ViewGroup> implements IBaseAttachmentsLayoutManage<T, V> {
     protected V mAttachmentsLayout;
     protected SimpleArrayMap<IBaseAttachment, IBaseAttachmentItem> mAttachmentItemList = new SimpleArrayMap<>();

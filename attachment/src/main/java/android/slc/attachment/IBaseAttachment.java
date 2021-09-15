@@ -3,7 +3,7 @@ package android.slc.attachment;
 
 import android.slc.attachment.bean.NetBody;
 
-public interface IBaseAttachment<L, N extends NetBody> {
+public interface IBaseAttachment<L, N extends NetBody<?>> {
     /**
      * 获取本地主体，一般为附件的信息
      *
